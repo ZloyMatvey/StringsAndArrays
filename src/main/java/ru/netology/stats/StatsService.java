@@ -31,7 +31,6 @@ public class StatsService {
                 maxMonth = i;
             }
         }
-        System.out.println(maxMonth + 1);
         return maxMonth + 1;
     }
 
@@ -43,7 +42,6 @@ public class StatsService {
                 minMonth = i;
             }
         }
-        System.out.println(minMonth + 1);
         return minMonth + 1;
     }
 
@@ -70,7 +68,6 @@ public class StatsService {
                 count++;
             }
         }
-        System.out.println(count);
         return count;
     }
 }
