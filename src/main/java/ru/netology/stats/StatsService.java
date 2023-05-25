@@ -59,6 +59,7 @@ public class StatsService {
         }
         return count;
     }
+
     //Количество месяцев, в которых продажи были выше среднего
     public int MonthsAboveAverage(int[] salesArray) {
         int count = 0;
