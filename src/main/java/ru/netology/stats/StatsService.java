@@ -3,7 +3,7 @@ package ru.netology.stats;
 public class StatsService {
 
     //Сумма всех продаж
-    public int AmountOfSales(int[] salesArray) {
+    public int amountOfSales(int[] salesArray) {
         int sum = 0;
         for (int i = 0; i < salesArray.length; i++) {
             sum = sum + salesArray[i];
@@ -12,7 +12,7 @@ public class StatsService {
     }
 
     //Средняя сумма всех продаж
-    public int AverageSalesAmount(int[] salesArray) {
+    public int averageSalesAmount(int[] salesArray) {
         int sum = 0;
         int count = 0;
         for (int i = 0; i < salesArray.length; i++) {
@@ -24,7 +24,7 @@ public class StatsService {
     }
 
     // Номер месяца, в котором был пик продаж
-    public int MonthOfMaximumSales(int[] salesArray) {
+    public int monthOfMaximumSales(int[] salesArray) {
         int maxMonth = 0;
         for (int i = 0; i < salesArray.length; i++) {
             if (salesArray[i] >= salesArray[maxMonth]) {
@@ -35,7 +35,7 @@ public class StatsService {
     }
 
     //Номер месяца, в котором был минимум продаж
-    public int MonthOfMinimumSales(int[] salesArray) {
+    public int monthOfMinimumSales(int[] salesArray) {
         int minMonth = 0;
         for (int i = 0; i < salesArray.length; i++) {
             if (salesArray[i] <= salesArray[minMonth]) {
@@ -46,7 +46,7 @@ public class StatsService {
     }
 
     // Количество месяцев, в которых продажи были ниже среднего
-    public int MonthsBelowAverage(int[] salesArray) {
+    public int monthsBelowAverage(int[] salesArray) {
         int count = 0;
         int average = AverageSalesAmount(salesArray);
 
@@ -59,12 +59,12 @@ public class StatsService {
     }
 
     //Количество месяцев, в которых продажи были выше среднего
-    public int MonthsAboveAverage(int[] salesArray) {
+    public int monthsAboveAverage(int[] salesArray) {
         int count = 0;
         int average = AverageSalesAmount(salesArray);
 
         for (int i = 0; i < salesArray.length; i++) {
-            if (salesArray[i] < average) {
+            if (salesArray[i] > average) {
                 count++;
             }
         }
