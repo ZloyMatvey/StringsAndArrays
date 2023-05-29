@@ -9,84 +9,84 @@ public class StatsServiceTest {
 
 
     @Test
-    void AmountOfSalesTest() {
+    void amountOfSalesTest() {
         StatsService service = new StatsService();
 
         // параметры для сравнения
         int expected = 180;
 
         //Вызываем цедевой метод
-        int actual = service.AmountOfSales(salesArray);
+        int actual = service.amountOfSales(salesArray);
 
         //Производим проверку
         Assertions.assertEquals(expected, actual);
     }
 
     @Test
-    void AverageSalesAmountTest() {
+    void averageSalesAmountTest() {
         StatsService service = new StatsService();
 
         // параметры для сравнения
         int expected = 15;
 
         //Вызываем цедевой метод
-        int actual = service.AverageSalesAmount(salesArray);
+        int actual = service.averageSalesAmount(salesArray);
 
         //Производим проверку
         Assertions.assertEquals(expected, actual);
     }
 
     @Test
-    void MonthOfMaximumSalesTest() {
+    void monthOfMaximumSalesTest() {
         StatsService service = new StatsService();
 
         // параметры для сравнения
         int expected = 8;
 
         //Вызываем цедевой метод
-        int actual = service.MonthOfMaximumSales(salesArray);
+        int actual = service.monthOfMaximumSales(salesArray);
 
         //Производим проверку
         Assertions.assertEquals(expected, actual);
     }
 
     @Test
-    void MonthOfMinimumSalesTest() {
+    void monthOfMinimumSalesTest() {
         StatsService service = new StatsService();
 
         // параметры для сравнения
         int expected = 9;
 
         //Вызываем цедевой метод
-        int actual = service.MonthOfMinimumSales(salesArray);
+        int actual = service.monthOfMinimumSales(salesArray);
 
         //Производим проверку
         Assertions.assertEquals(expected, actual);
     }
 
     @Test
-    void MonthsBelowAverageTest() {
+    void monthsBelowAverageTest() {
         StatsService service = new StatsService();
 
         // параметры для сравнения
         int expected = 5;
 
         //Вызываем цедевой метод
-        int actual = service.MonthsBelowAverage(salesArray);
+        int actual = service.monthsBelowAverage(salesArray);
 
         //Производим проверку
         Assertions.assertEquals(expected, actual);
     }
 
     @Test
-    void MonthsAboveAverageTest() {
+    void monthsAboveAverageTest() {
         StatsService service = new StatsService();
 
         // параметры для сравнения
         int expected = 5;
 
         //Вызываем цедевой метод
-        int actual = service.MonthsAboveAverage(salesArray);
+        int actual = service.monthsAboveAverage(salesArray);
 
         //Производим проверку
         Assertions.assertEquals(expected, actual);
